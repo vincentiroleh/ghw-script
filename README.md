@@ -85,11 +85,17 @@ curl http://localhost
 
 From your local machine, or from a temporary test box, hit the ALB hard.
 
+If you don’t have ab installed:
+
+```sudo apt install apache2-utils```
+
 If you have ab:
 
 ```
 ab -n 20000 -c 100 http://<ALB_DNS_NAME>/
 ```
+
+
 
 ### Install the CloudWatch agent on the instance
 
